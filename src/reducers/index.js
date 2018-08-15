@@ -1,7 +1,8 @@
 import { combineReducers } from "redux";
-
-const bookReducer = (state = { foo: "bar" }) => state;
+import { booksReducer as books } from "./booksReducer";
+import { uiReducer as ui } from "./uiReducer";
 
 export const rootReducer = combineReducers({
-  books: bookReducer
+  books,
+  ui
 });
