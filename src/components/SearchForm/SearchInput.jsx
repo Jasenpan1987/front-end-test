@@ -5,13 +5,14 @@ const SearchInputComponent = ({
   propertyName,
   onChange,
   value,
-  label = propertyName
+  label = propertyName,
+  error
 }) => (
   <div className="col">
     <div className="form-group">
       <label htmlFor={propertyName}>{label}</label>
       <input
-        className="form-control"
+        className={`form-control ${error && "is-invalid"}`}
         type="text"
         id={propertyName}
         name={propertyName}
@@ -19,6 +20,7 @@ const SearchInputComponent = ({
         onChange={onChange}
         data-target={propertyName}
       />
+      <div className="invalid-feedback">{error}</div>
     </div>
   </div>
 );
@@ -27,7 +29,8 @@ SearchInputComponent.propTypes = {
   propertyName: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
-  label: PropTypes.string
+  label: PropTypes.string,
+  error: PropTypes.string
 };
 
 export const SearchInput = SearchInputComponent;

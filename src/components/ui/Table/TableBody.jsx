@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const TableBody = ({ data }) => {
-  console.log(data);
   return (
     <tbody>
       {Object.keys(data).map(propName => (
