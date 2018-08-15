@@ -1,5 +1,3 @@
-// import { TRANSFORM_POSTS } from "../constants/actionTypes";
-
 const normalizeMiddleware = ({ dispatch, getState }) => next => action => {
   const { schema, payload, ...otherActionProps } = action;
   if (schema === undefined) {

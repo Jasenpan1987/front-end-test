@@ -5,10 +5,14 @@ export const FETCH_BOOKS_PENDING = "FETCH_BOOKS_PENDING";
 export const FETCH_BOOKS_SUCCESS = "FETCH_BOOKS_SUCCESS";
 export const FETCH_BOOKS_FAILED = "FETCH_BOOKS_FAILED";
 
-export const fetchBooks = () => async dispatch => {
+export const fetchBooks = query => async dispatch => {
   dispatch({ type: FETCH_BOOKS_PENDING, raiseToUiAction: LOADING_START });
   try {
-    const books = await api.get("/books");
+    const books = await api.get({
+      url: "/books",
+      query
+    });
+
     dispatch({
       type: FETCH_BOOKS_SUCCESS,
       payload: books,
