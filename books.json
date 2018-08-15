@@ -1,0 +1,64 @@
+{
+  "books": [
+    {
+      "isbn": "1111",
+      "title": "JavaScript: The Good Parts",
+      "author": "Douglas Crockford",
+      "pages": 165
+    },
+    {
+      "isbn": "2222",
+      "title": "HTML5: The Missing Manual",
+      "author": "Matthew MacDonald",
+      "pages": 385
+    },
+    {
+      "isbn": "3333",
+      "title": "Secrets of the JavaScript Ninja, Second Edition",
+      "author": "John Resig",
+      "pages": 423
+    },
+    {
+      "isbn": "4444",
+      "title": "JavaScript Patterns",
+      "author": "Stoyan Stefanov",
+      "pages": 201
+    },
+    {
+      "isbn": "5555",
+      "title": "CSS Secrets",
+      "author": "Lea Verou",
+      "pages": 328
+    },
+    {
+      "isbn": "6666",
+      "title": "CSS Pocket Reference",
+      "author": "Eric A. Meyer",
+      "pages": 412
+    },
+    {
+      "isbn": "7777",
+      "title": "Positioning in CSS",
+      "author": "Eric A. Meyer",
+      "pages": 146
+    },
+    {
+      "isbn": "8888",
+      "title": "Pro JavaScript Techniques: Second Edition",
+      "author": "John Resig",
+      "pages": 602
+    },
+    {
+      "isbn": "9999",
+      "title": "Eloquent Javascript, 3rd Edition",
+      "author": "Marijn Haverbeke",
+      "pages": 398
+    },
+    {
+      "isbn": "0000",
+      "title": "JavaScript Pocket Reference",
+      "author": "David Flanagan",
+      "pages": 746
+    }
+  ]
+}
